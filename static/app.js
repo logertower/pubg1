@@ -1,6 +1,6 @@
 const appData = {
   autoRefresh: true,
-  refreshInterval: 1000,
+  refreshInterval: 50,
   gsTime: 0,
   me: [-1, -1, 0, 0],
   meGuid: -1,
@@ -676,7 +676,7 @@ const renderMap = () => {
          [loc[0] + Math.cos(radianAngle) * 512, loc[1] - Math.sin(radianAngle) * 512]]
         )
       )
-    } 
+    }
     feature.set('_label', label)
     // re-add should be fine
     playerSource.addFeature(feature)
